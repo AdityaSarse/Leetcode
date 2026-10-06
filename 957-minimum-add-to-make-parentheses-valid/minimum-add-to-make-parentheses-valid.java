@@ -1,7 +1,6 @@
 class Solution {
     public int minAddToMakeValid(String s) {
-        int count = 0;
-        int additions = 0;
+        int count = 0 , add = 0;
 
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
@@ -13,12 +12,12 @@ class Solution {
                 count--;
 
                 if (count < 0) {
-                    additions++;
+                    add++;
                     count = 0;
                 }
             }
         }
 
-        return additions + count;
+        return add + count;
     }
 }
