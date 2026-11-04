@@ -6,7 +6,6 @@ class Solution {
         int delta = (sumB - sumA) / 2;
         Set<Integer> bobSet = new HashSet<>();
         for (int b : bobSizes) bobSet.add(b);
-
         for (int a : aliceSizes) {
             int target = a + delta;
             if (bobSet.contains(target)) {
