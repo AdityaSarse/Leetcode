@@ -1,6 +1,3 @@
-import java.util.HashSet;
-import java.util.Set;
-
 class Solution {
     public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
         int sumA = 0, sumB = 0;
